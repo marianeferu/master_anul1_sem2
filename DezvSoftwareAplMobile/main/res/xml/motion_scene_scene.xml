@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:motion="http://schemas.android.com/tools">
+
+    <Transition
+        app:constraintSetEnd="@id/end"
+        app:constraintSetStart="@+id/start"
+        app:duration="1000">
+        <KeyFrameSet>
+            <KeyAttribute
+                motion:motionTarget="@+id/imageView2"
+                motion:framePosition="58"
+                android:scaleX="2.0"
+            />
+            <KeyAttribute
+                motion:motionTarget="@+id/imageView2"
+                motion:framePosition="50"
+                android:scaleX="2.0"
+                />
+        </KeyFrameSet>
+        <OnClick motion:targetId = "@id/imageView2"/>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:id="@+id/imageView2"
+            motion:layout_contraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            />
+    </ConstraintSet>
+</MotionScene>
+    <!--        app:motionInterpolator="linear">-->
+<!--        <OnClick app:clickAction = "toggle"-->
+<!--                app:target = "@id/button"-->
+<!--        />-->
+
+
+
+
+<!--    <KeyAttribute-->
+<!--        android:alpha="0"-->
+<!--        app:framePosition="60"-->
+<!--        app:motionTarget="@id/button"-->
+
+
+

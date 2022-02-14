@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single"> // only one menu item from this group will stay selected
+        <item
+            android:id="@+id/nav_about_us"
+            android:icon="@drawable/ic_message"
+            android:title="About Us" />
+        <item
+            android:id="@+id/nav_takephoto"
+            android:icon="@drawable/ic_takephoto"
+            android:title="Take Photo" />
+        <item
+            android:id="@+id/nav_notes"
+            android:icon="@drawable/ic_list"
+            android:title="My notes" />
+    </group>
+
+    <item android:title="Communicate"> //trigger action, but won't stay selected
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

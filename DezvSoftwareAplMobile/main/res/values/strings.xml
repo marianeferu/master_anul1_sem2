@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FList</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="contact_details_phone"> Telephone number: 0767423281 </string>
+    <string name="contact_details_email"> Email address: saratele.bunebune@gmail.com </string>
+    <string name="contact_details_address"> Address: Bd.Elisabeta,nr 45, Bucharest </string>
+</resources>
